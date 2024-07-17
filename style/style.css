@@ -153,11 +153,12 @@ h3{
 }
 .banner-p{
     font-size: 10px;
+    margin-left: 10px;
 }
 .banner-another{
     display: flex;
-width: 130px;
-    height: 90px;
+    width: 140px;
+    height: 70px;
     font-size: 15px;
     font-weight: 10px;
     margin-left: 2px;
@@ -171,7 +172,54 @@ width: 130px;
     
 }
 .icon{
-    f
+    font-size: 30px;
+    margin-bottom: 10px;
     align-items: center;
     color: #ff4500;
+}
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Change habit Section */
+.change{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+p{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(130, 130, 127);
+    
+}
+.change-p{
+    font-size: 18px;
+    font-weight: 500;
+}
+h5{
+    color: white;
+    font-size: 15px;
+}
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 130px 0 100px ;
+}
+
+.row {
+    text-align: center;
+}
+/* Round images in change habit*/
+.row img {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px; 
 }
