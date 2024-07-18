@@ -81,7 +81,7 @@ h3{
 .banner{
     /* flex-direction: column; */
     align-items: center;
-    background-color:linear-gradient(200deg,
+    background-color:inear-gradient(200deg,
     rgba(236, 225, 225, 0.8)0%,
     rgb(236, 227, 227)100%);
     margin-top: -80px;
@@ -103,14 +103,17 @@ h3{
     margin-top: 30px;
 }
 .banner-img{
-    width:60%;
+    width:80%;
     min-height:700px ;
     margin-left: 200px;
     align-items: center;
-    background-image: 
+    background-image:
     url("../images/Images 2.png");
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
+
+    color: white;
+     
+    /* background-blend-mode: overlay; */
 }
 .banner-image{
     width: 100%;
@@ -211,13 +214,16 @@ h5{
 }
 h2{
     color: white;
-    font-size: 40px;
+    font-size: 25px;
 }
 .image-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px 130px 0 100px ;
+}
+.Change-h2{
+    font-size: 40px;
 }
 
 .row {
@@ -258,7 +264,6 @@ h2{
     width: 100%;
     max-width: 300px; 
     height: auto;
-    display: block;
     border-radius: 8px;
 }
 .run-p{
@@ -266,6 +271,8 @@ h2{
 }
 
 /* Bmi Calculator */
+
+
 .Bmi{
     margin-left: 260px;
     align-items: center;
@@ -273,4 +280,208 @@ h2{
 .bmi-chart{
     background-color: rgb(41, 40, 40);
 }
+.bmi-h2{
+    margin:60px;
+    padding: 20px 0  20px;
+}
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.bmi-category {
+    font-weight: bold;
+}
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    color: white;
+}
+
+.bmi-category {
+    font-weight: bold;
+}
+
+table {
+    align-items: center;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-top: 1px solid #4f4e4e;
+    border-right: 1px solid #605c5c;
+    border-left: 1px solid #5f5c5c;
+    border-bottom: 1px solid #6a6767;
+}
+td{
+    color: #a7a1a1;
+}
+th {
+    color: white;
+}
+.bmi-category {
+    font-weight: bold;
+}
+
+/* Another part of BMi */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px ;
+    margin-bottom: 20px;
+    border: 1px solid #686868;
+    border-radius: 4px;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+.radio-group {
+    margin-bottom: 20px;
+}
+.radio-group label {
+    font-weight: normal;
+}
+
+
+
+
+/* Meat our team style */
+
+.meet-team2 {
+    background-color: rgb(41, 40, 40);
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.row-1,.row-2
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px ;
+    gap: 20px;
+
+}
+.img-card {
+    
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(233, 223, 223, 0.767);
+     position: relative;
+}
+
+.img-card img {
+    width: 300px;
+    height: 250px;
+     border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.img-card h6 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
+}
+
+.img-card .Card {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
+}
+
+.img-card h6 {
+    margin: 10px 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.img-card p{
+    color:#FFFFFF80;
+}
+.team-p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* footer style */
+
+
+
+/* footer get started part */
+.nav-options1{
+   word-wrap:break-word;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(102, 99, 99);
+}
+.footer-section hr{
+    margin: 2rem 0;
+}
+.footer-section{
+    background-color:rgb(41, 40, 40);  ;
+}
+h1
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
 

@@ -54,7 +54,7 @@
              <!-- Change your habit -->
          <section>
             <div class="change">
-                <h2>Change Your Habit </h2>
+                <h2 class="Change-h2">Change Your Habit </h2>
                 <p class="change-p">We believe fitness should be accessible to everyone, everywhere, regardless <br> of income or access to a gym.</p>
         </div>
             <div class="image-grid">
@@ -93,19 +93,143 @@
           </section>
 
           <!-- Bmi calculator -->
-           <section>
+           <section class="Bmi-calculator">
             <div class="Bmi">
                 <h2>BMI calculator</h2>
                 <P>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</P>
             </div>
             <div class="bmi-chart">
+                <table>
+                    <h2 class="bmi-h2">BMI Calculator Chart</h2>
+                   <thead>
+                    <tr>
+                        <th>BMI</th>
+                        <th>Weight Status</th>
+                    </tr>
+                   </thead>
+                   <tbody>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+
+                    <tr>
+                     <td>18.24.9</td>
+                    <td>Healthy</td>
+                    </tr>
+
+                    <tr>
+                        <td>25.0-29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+
+                    <tr>
+                        <td>30.0-and Above</td>
+                        <td>Obese</td>
+                    </tr>
+
+                   </tbody>
+                </table>
 
             </div>
-           </section> 
+            <div>
+                <h2>Calculator your BMI</h2>
+                <p>We believe fitness should be accessible to everyone,everywhere regardless of income or access to a gym.</p>
+            
+
+                <!-- * -->
+                <form>
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" placeholder="Height/cm" required>
+        
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Weight/kg" required>
+        
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Age" required>
+        
+                    <div class="radio-group">
+                        <label for="sex">Sex:</label>
+                        <input type="radio" id="male" name="sex" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="sex" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+        
+                    <label for="activity-factor">Select an activity factor:</label>
+                    <select id="activity-factor" name="activity-factor" required>
+                        <option value="" disabled selected>Select activity factor</option>
+                        <option value="sedentary">Sedentary (little or no exercise)</option>
+                        <option value="light">Lightly active (light exercise/sports 1-3 days/week)</option>
+                        <option value="moderate">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                        <option value="very">Very active (hard exercise/sports 6-7 days a week)</option>
+                        <option value="extra">Extra active (very hard exercise/sports & physical job)</option>
+                    </select>
+
+            </div>
+           </section>
+           
+           <!-- Meet our team -->
+            <section class="meet-team">
+                <h2>Meet Our Team</h2>
+                <p class="team-p">We believe fitness should be accessible to everyone, everywhere,<br> regardless of income or access to a gym.</p>
+                <div class="meet-team2">
+                    <div class="row-1">
+                        <div class="img-card"><img src="images/trainer1.png" alt="">
+                            <h6>Jerome Bell</h6>
+                        <p class="Card">Trainer</p>
+                            </div>
+                        <div class="img-card"><img src="images/trainer2.png" alt="">
+                            <h6>Cameron Williamson</h6>
+                        <p class="Card">Trainer</p>
+                            </div>
+                        <div class="img-card"><img src="images/trainer3.png" alt="">
+                            <h6>Darrell Steward</h6>
+                        <p class="Card">Trainer</p>
+                            </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="img-card"><img src="images/trainer4.png" alt="">
+                            <h6>Dianne Russell</h6>
+                        <p class="Card">Trainer</p>
+                            </div>
+                        <div class="img-card"><img src="images/trainer5.png" alt="">
+                            <h6>Cody Fisher</h6>
+                        <p class="Card">Trainer</p>
+                            </div>
+                        <div class="img-card"><img src="images/trainer6.png" alt="">
+                            <h6>Theresa Webb</h6>
+                        <p class="Card">Trainer</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
         
 
      
      </main>
+     <footer
+
+     class="footer-section">
+     <div>
+        <h1 class="span-h1">Fitness</h1>
+        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+     </div>
+     <div>
+        <div class="get-started">
+            <h5>Get Started</h5>
+            <div class="nav-options1 ">
+                <a class="nav-link" href="">Service</a>
+                <a class="nav-link">Contact Us</a>
+                <a class="nav-link" href="">Affiliate Program</a>
+                <a class="nav-link" href="">About Us</a>
+    
+            </div>
+        </div>
+     </div>
+     <hr />
+        <p>&copy; 2024, All Rights Reserved</p>
+    </footer>
        
 </body>
 </html>
