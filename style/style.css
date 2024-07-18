@@ -78,7 +78,7 @@ h3{
     color: white;
 }
 .span{
-    color:#ee2405;
+    color: #e6783c;
 }
 .span1{
     background-color: #ee2405;
@@ -286,7 +286,7 @@ h2{
     text-align: center;
 }
 
-/* Bmi Calculator */
+/* Bmi Calculator style */
 
 .Bmi-calculator {
     display: flex;
@@ -296,24 +296,11 @@ h2{
     max-width: 1200px;
     margin: 20px;
 }
-
-/* .Bmi, .bmi-chart, .bmi-form {
-    flex: 1 1 300px;
-    margin: 10px;
-} */
-
-/* .Bmi h2, .bmi-form h2, .bmi-chart .bmi-h2 {
-    margin-bottom: 10px;
-} */
-
-/* .Bmi p, .bmi-form p {
-    margin-bottom: 20px;
-} */
-
 .bmi-chart table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: -30px;
+    margin-left: 50px;
 }
 
 .bmi-chart th, .bmi-chart td {
@@ -321,45 +308,14 @@ h2{
     padding: 8px;
     text-align: center;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input[type="number"], select {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.radio-group {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.radio-group input[type="radio"] {
-    margin-left: 10px;
-}
-
-
-
-/* .Bmi{
+.Bmi{
     margin-left: 260px;
     align-items: center;
 }
-.bmi-chart{
-    background-color: rgb(41, 40, 40);
-}
+
 .bmi-h2{
     margin:60px;
-    padding: 20px 0  20px;
+    padding: ;
 }
 .table {
     border-collapse: collapse;
@@ -370,45 +326,12 @@ input[type="number"], select {
     border-radius: 8px;
     overflow: hidden;
 }
-th, td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
+
 .bmi-category {
     font-weight: bold;
-}
-.table {
-    border-collapse: collapse;
-    width: 80%;
-    max-width: 600px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-th, td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
 }
 th {
     color: white;
-}
-
-.bmi-category {
-    font-weight: bold;
-}
-
-table {
-    align-items: center;
-    border-collapse: collapse;
-    width: 80%;
-    max-width: 600px;
-    margin-left: 50px;
-    margin-top: 50px;
-    border-radius: 8px;
-    overflow: hidden;
 }
 th, td {
     text-align: left;
@@ -421,41 +344,47 @@ th, td {
 td{
     color: #a7a1a1;
 }
-th {
-    color: white;
-}
-.bmi-category {
-    font-weight: bold;
-} */
 
 /* Another part of BMi */
 h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+input[type="number"], select {
+    padding: 10px 50px;
+    margin-top: 5px;
+    margin-left: 100px;
+    border: 1px solid #676363;
+    border-radius: 7px;
 }
 input[type="number"],
 select {
     width: 100%;
     padding: 10px ;
     margin-bottom: 20px;
+    background-color: #2b2a2a;
     border: 1px solid #686868;
     border-radius: 4px;
 }
-input[type="radio"] {
-    margin-right: 10px;
+.btn-primary2{
+    width: 180px;
+    background-color: #ff4500;
+    color:white;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 2 rem;
+    font-weight: 800;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border: 0;
+    
 }
-.radio-group {
-    margin-bottom: 20px;
-}
-.radio-group label {
-    font-weight: normal;
-}
-
 
 
 
