@@ -2,8 +2,19 @@
 
 body{
     font-family: "Poppins", sans-serif;
+   
     background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
+.font-change{
+    font-family: 'Miama', sans-serif;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: .3rem;
+}
+                                     
 
 /* Shared styles */
 *{
@@ -18,6 +29,7 @@ body{
     margin: 5rem auto;
     
 }
+
 h3{
     font-size: 36px;
     text-align: center;
@@ -66,7 +78,7 @@ h3{
     color: white;
 }
 .span{
-    color: #E6533C;
+    color:#ee2405;
 }
 .span1{
     background-color: #ee2405;
@@ -81,11 +93,9 @@ h3{
 .banner{
     /* flex-direction: column; */
     align-items: center;
-    background-color:inear-gradient(200deg,
-    rgba(236, 225, 225, 0.8)0%,
-    rgb(236, 227, 227)100%);
+    background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
     margin-top: -80px;
-    background-blend-mode:lighten;
+   
 }
 
 
@@ -94,14 +104,21 @@ h3{
     width: 60%;
     margin-left: 50px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 .banner-title{
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 2.5rem;
     color: white;
-    margin-top: 30px;
+    margin-top: -30px;
+    margin-left: 50px;
+    
 }
+.banner-title .italic {
+    font-style:unset;
+}
+
 .banner-img{
     width:80%;
     min-height:700px ;
@@ -117,12 +134,6 @@ h3{
 }
 .banner-image{
     width: 100%;
-    
-    /* height: 450px;
-    margin-left: 180px;
-    margin-right: 300px;
-    
-     */
 }
 .banner-description{
     font-size: 20px;
@@ -161,7 +172,10 @@ h3{
 }
 .banner-p{
     font-size: 10px;
+    font-weight: 500;
+    color: #686868;
     margin-left: 10px;
+    margin-top: -25px;
 }
 .banner-another{
     display: flex;
@@ -176,7 +190,6 @@ h3{
     border: 1px solid rgb(158, 150, 150);
     background:rgba(143, 139, 139, 0.2);
     border-radius: 8px;
-    /* backdrop-filter: blur(3px); */
     
 }
 .icon{
@@ -193,6 +206,9 @@ h3{
 }
 
 /* Change habit Section */
+.change-section{
+    margin-top: -5px;
+}
 .change{
     text-align: center;
     margin-bottom: 20px;
@@ -272,8 +288,69 @@ h2{
 
 /* Bmi Calculator */
 
+.Bmi-calculator {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2b2a2a;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px;
+}
 
-.Bmi{
+/* .Bmi, .bmi-chart, .bmi-form {
+    flex: 1 1 300px;
+    margin: 10px;
+} */
+
+/* .Bmi h2, .bmi-form h2, .bmi-chart .bmi-h2 {
+    margin-bottom: 10px;
+} */
+
+/* .Bmi p, .bmi-form p {
+    margin-bottom: 20px;
+} */
+
+.bmi-chart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.bmi-chart th, .bmi-chart td {
+    border: 1px solid #939090;
+    padding: 8px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="number"], select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-left: 10px;
+}
+
+
+
+/* .Bmi{
     margin-left: 260px;
     align-items: center;
 }
@@ -349,7 +426,7 @@ th {
 }
 .bmi-category {
     font-weight: bold;
-}
+} */
 
 /* Another part of BMi */
 h2 {
@@ -396,12 +473,10 @@ input[type="radio"] {
     grid-template-columns: repeat(3, 1fr);
     padding: 20px ;
     gap: 20px;
+    
 
 }
 .img-card {
-    
-    padding: 5px 0;
-    text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(233, 223, 223, 0.767);
      position: relative;
@@ -410,14 +485,13 @@ input[type="radio"] {
 .img-card img {
     width: 300px;
     height: 250px;
-     border-radius: 5px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    border-radius: 7px;
+    filter:brightness(80%);  
 }
 .img-card h6 {
     position: absolute;
-    top: 70%;
-    left: 30%;
+    top: 80%;
+    left: 29%;
     transform: translate(-50%, -50%);
     margin: 0;
     z-index: 1;
@@ -425,8 +499,8 @@ input[type="radio"] {
 
 .img-card .Card {
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 90%;
+    left: 22%;
     transform: translate(-50%, -50%);
     margin: 0;
     z-index: 1;
@@ -439,7 +513,8 @@ input[type="radio"] {
     color: white;
 }
 .img-card p{
-    color:#FFFFFF80;
+    color:#d6cdcd80;
+    font-size: 11px;
 }
 .team-p{
     text-align: center;
@@ -448,28 +523,41 @@ input[type="radio"] {
 
 
 
-
-
-/* footer style */
-
-
-
 /* footer get started part */
-.nav-options1{
-   word-wrap:break-word;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 .nav-link{
     text-decoration: none;
     font-weight: 500;
     color: rgb(102, 99, 99);
 }
-.footer-section hr{
-    margin: 2rem 0;
+.footer-section{
+    margin-top: 50px;
+    padding: 50px 0px 50px 100px;
 }
 .footer-section{
-    background-color:rgb(41, 40, 40);  ;
+    background-color:rgb(41, 40, 40);  
 }
-h1
+
+.footer-section hr{
+    margin: 2rem  ;
+
+}
+.hr-p{
+    text-align: center;
+    font-size: 14px;
+}
+
+/* footer started style */
+.started{
+    display: flex;
+    
+}
+
 
 
 
