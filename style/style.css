@@ -2,7 +2,6 @@
 
 body{
     font-family: "Poppins", sans-serif;
-   
     background-color: black;
     margin: 0;
     padding: 0;
@@ -57,6 +56,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
     height: 8rem;
     margin-top: -0px;
     /* background-color: rgb(26, 24, 24); */
@@ -67,9 +67,10 @@ h3{
     justify-content: space-evenly;
     font-weight: 20px;
     font-size: 23px;
+    padding: 8px;
     margin-right: 90px;
-    border-radius: 11px;
-    border: .5px solid rgb(110, 110, 110);
+    border-radius: 80px;
+    border: .5px solid rgb(51, 50, 50);
     gap: 3rem;
 }
 .nav-link {
@@ -77,16 +78,15 @@ h3{
     font-weight: 500;
     color: white;
 }
-.footer-links{
-    list-style: none;
-}
+
 .span{
     color: #e6783c;
 }
 .span1{
-    background-color: #ee2405;
+    background-color: rgb(231, 71, 14);
     color: white;
-    border-radius: 12px;
+    border-radius: 18px;
+    padding: 2px
 }
 .navbar, .banner{
     max-width: 1440px;
@@ -105,35 +105,27 @@ h3{
 /* banner related styles */
 .banner-content{
     width: 60%;
-    margin-left: 50px;
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 50px; 
 }
 .banner-title{
     font-weight: 600;
     font-size: 2.5rem;
     color: white;
-    margin-top: -30px;
     margin-left: 50px;
     
 }
-.banner-title .italic {
-    font-style:unset;
-}
-
 .banner-img{
     width:80%;
-    min-height:700px ;
+    min-height:600px ;
     margin-left: 200px;
     align-items: center;
     background-image:
     url("../images/Images 2.png");
     background-repeat: no-repeat;
-
     color: white;
-     
-    /* background-blend-mode: overlay; */
 }
 .banner-image{
     width: 100%;
@@ -170,13 +162,12 @@ h3{
     border: 1px solid rgb(158, 150, 150);
     background:rgba(156, 150, 150, 0.2);
     border-radius: 8px;
-    /* backdrop-filter: blur(3px); */
-    
+   
 }
 .banner-p{
     font-size: 10px;
     font-weight: 500;
-    color: #686868;
+    color: #a8a1a1;
     margin-left: 10px;
     margin-top: -25px;
 }
@@ -187,7 +178,7 @@ h3{
     font-size: 15px;
     font-weight: 10px;
     margin-left: 2px;
-    margin-top: 250px;
+    margin-top: 270px;
     color: white;
     text-align: center;
     border: 1px solid rgb(158, 150, 150);
@@ -210,7 +201,7 @@ h3{
 
 /* Change habit Section */
 .change-section{
-    margin-top: -5px;
+    padding: 70px;
 }
 .change{
     text-align: center;
@@ -233,13 +224,14 @@ h5{
 }
 h2{
     color: white;
-    font-size: 25px;
+    font-size: 35px;
 }
 .image-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px 130px 0 100px ;
+    
 }
 .Change-h2{
     font-size: 40px;
@@ -256,6 +248,7 @@ h2{
     border-radius: 50%;
     display: block;
     margin: 0 auto 10px; 
+    border: 3px solid rgb(39, 38, 38);
 }
 
 /* run an extra easy */
@@ -264,29 +257,31 @@ h2{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(41, 40, 40); 
-    padding: 18px;
-    margin: 170px;
-    border-radius: 8px;
-    gap: 15px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 12px;
+}
+.run-text1{
+    padding: 10px ;
+    margin-left: 70px;
+}
+.run-text{
+    padding: 10px ;
+    margin-left: 70px;
 }
 
-.run, .run-img {
-    flex: 1;
+ .run-img {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding: 30px;
+    border-radius: 6px;
+  
 }
 
 .run-img img {
     width: 100%;
-    max-width: 300px; 
+    max-width: 250px; 
     height: auto;
     border-radius: 8px;
-}
-.run-p{
-    text-align: center;
 }
 
 /* Bmi Calculator style */
@@ -392,11 +387,15 @@ select {
 
 
 /* Meat our team style */
+.meet-team{
+    padding: 20px;
+}
 
 .meet-team2 {
     background-color: rgb(41, 40, 40);
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 50px;
     border-radius: 10px;
 }
 .row-1,.row-2
@@ -483,6 +482,10 @@ select {
     text-align: center;
     font-size: 14px;
 }
+.link{
+    list-style: none;
+}
+
 
 /* footer started style */
 .started{
@@ -491,6 +494,7 @@ select {
 }
 .options{
     display: flex;
+    list-style: none;
     font-weight: 20px;
     font-size: 23px;
     margin-right: 90px;
@@ -508,11 +512,10 @@ select {
     rgba(31, 27, 27, 0.8)0%,
     rgba(245, 237, 237, 0)100%),
     url('../Images/exercise6.jpg');
-    padding: 7rem 0;
+    padding: 5rem 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
 
@@ -534,7 +537,7 @@ select {
 .travel-inputs{
     margin-top: 2rem;
     border-radius: 8px;
-    background:rgba(255,255,255,0.2);
+    background:rgba(68, 44, 186, 0.2);
     padding: 1rem;
     display: flex;
     justify-content: space-around;
@@ -546,6 +549,7 @@ select {
 input,select{
     width: 150px;
     height: 50px;
+    color: white;
     padding: 0 0.5rem;
     margin: 0 1rem;
     border-radius: 8px;
@@ -576,7 +580,7 @@ input,select{
     font-size: 26px;
 }
     .ham-burger{
-      color: white;
+    color: white;
     font-size: 26px;
 }
     .container{
