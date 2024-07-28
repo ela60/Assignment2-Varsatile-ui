@@ -46,6 +46,7 @@ h3{
     font-size: 2 rem;
     font-weight: 800;
     border-radius: 20px;
+    margin-left: 70px;
     margin-top: 10px;
     border: 0;
     
@@ -284,7 +285,16 @@ h2{
     border-radius: 8px;
 }
 
-/* Bmi Calculator style */
+/* Bmi style */
+.Bmi{
+    padding: 70px;
+    margin-left: 260px;
+    
+}
+.bmi-h{
+    margin-left:-640px ;
+}
+/* bmi Calculator style */
 
 .Bmi-calculator {
     display: flex;
@@ -292,7 +302,7 @@ h2{
     background-color: #2b2a2a;
     padding: 20px;
     max-width: 1200px;
-    margin: 20px;
+    
 }
 .bmi-chart table {
     width: 100%;
@@ -306,14 +316,11 @@ h2{
     padding: 8px;
     text-align: center;
 }
-.Bmi{
-    margin-left: 260px;
-    align-items: center;
-}
 
 .bmi-h2{
+   font-size: 30px;
     margin:60px;
-    padding: ;
+    
 }
 .table {
     border-collapse: collapse;
@@ -453,7 +460,6 @@ select {
 }
 
 
-
 /* footer get started part */
 .footer-content {
     display: flex;
@@ -463,27 +469,17 @@ select {
 }
 .nav-link{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
     color: rgb(135, 131, 131);
 }
 .footer-section{
     margin-top: 50px;
     padding: 50px 0px 50px 100px;
-}
-.footer-section{
     background-color:rgb(41, 40, 40);  
-}
-
-.footer-section hr{
-    margin: 2rem  ;
-
 }
 .hr-p{
     text-align: center;
     font-size: 14px;
-}
-.link{
-    list-style: none;
 }
 
 
@@ -494,7 +490,7 @@ select {
 }
 .options{
     display: flex;
-    list-style: none;
+    list-style-type: none; 
     font-weight: 20px;
     font-size: 23px;
     margin-right: 90px;
@@ -503,9 +499,28 @@ select {
 .footer-links{
     display: flex;
 }
-.h5-footer{
-    font-size: 30px;
+
+.get-started {
+    padding: 0; 
 }
+
+.h5-footer {
+    margin: 0; 
+    padding: 0; 
+    font-size: 1.8em;
+}
+
+.options .link {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+.footer-section hr{
+    margin: 2rem  ;
+    width: 90%; 
+   border: 1px solid rgb(85, 83, 83);
+}
+
 /* unique side design */
 .explore-your-travel{
     background-image: linear-gradient(100deg,
@@ -547,7 +562,7 @@ select {
     backdrop-filter: blur(4px);
 }
 input,select{
-    width: 150px;
+    width: 120px;
     height: 50px;
     color: white;
     padding: 0 0.5rem;
@@ -557,6 +572,23 @@ input,select{
     cursor: pointer;
     font-size: 16px;
 }
+.btn-primary3{
+    
+        width: 150px;
+        height: 51px;
+        background-color: #ff4500;
+        color:white;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 2 rem;
+        font-weight: 800;
+        border-radius: 8px;
+        /* margin-left: 70px; */
+        margin-top: 10px;
+        border: 0;
+        
+    }
+
 
 
 
@@ -569,20 +601,229 @@ input,select{
 
 @media screen and (max-width: 576px)
 {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+      .span, .span1 {
+        display: block;
+        margin: 5px 0;
+    }
     .nav-options{
         display: none;
     }
     .ham-burger{
         display: block;
+        font-size: 26px;
+        color: white;
+        cursor: pointer;
+        align-self: flex-end; 
+        margin-top: -40px;
+        margin-right: 40px;
+       
     }
 
     h3{
     font-size: 26px;
 }
-    .ham-burger{
-    color: white;
-    font-size: 26px;
-}
+   /* banner responsive */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
+         padding: 10px;
+    }
+
+    .banner-content {
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 0; 
+    }
+
+    .banner-title {
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: white;
+        margin-left: 0;
+    }
+
+    .banner-img {
+        width: 100%;
+        min-height: 300px;
+        margin-left: 0; 
+        background-size: contain; 
+        background-position: center; 
+    }
+
+    .banner-description {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: rgb(130, 130, 127);
+        margin-left: 0; /* Center the description */
+    }
+
+    .btn-primary1 {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin-left: 0; /* Center the button */
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+
+    .banner-more {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        font-weight: 10px;
+        margin-left: 0; /* Center the element */
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(158, 150, 150);
+        background: rgba(156, 150, 150, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .banner-p {
+        font-size: 10px;
+        font-weight: 500;
+        color: #a8a1a1;
+        margin-left: 0; /* Center the text */
+        margin-top: -25px;
+    }
+
+    .banner-another {
+        display: flex;
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        font-weight: 10px;
+        margin-left: 0; /* Center the element */
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        border: 1px solid rgb(158, 150, 150);
+        background: rgba(143, 139, 139, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 24px;
+        margin-bottom: 5px;
+        align-items: center;
+        color: #ff4500;
+    }
+
+    .icon-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Change habit responsive section */
+
+    .change-section {
+        padding: 20px; 
+    }
+
+    h2 {
+        font-size: -5px;
+        color: rgb(255, 255, 255);
+         /* Reduce font size */
+    }
+
+    .Change-h2 {
+        font-size: 32px; 
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 10px;
+        padding: 10px 20px; 
+    }
+
+    /* next Run responsive */
+    
+        .row img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+            border: 3px solid rgb(39, 38, 38);
+        }
+    
+        .run-easy {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            background-color: rgb(41, 40, 40); 
+            margin: 0 10px; /* Reduce margins for smaller screens */
+            border-radius: 12px;
+            padding: 10px; /* Add padding for better spacing */
+        }
+    
+        .run-text1, .run-text {
+            padding: 10px;
+            /* margin-left: 0;  */
+            text-align: center; /* Center-align text */
+        }
+    
+      .run-img img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+        /* Meet our team responsive */
+            .meet-team {
+                padding: 12px; 
+            }
+        
+            .meet-team2 {
+                background-color: rgb(41, 40, 40);
+                 margin: 0 auto;
+                margin-top: 30px;
+                border-radius: 10px;
+            }
+            .img-card img {
+                width: 100%; 
+               
+            }
+        
+            .row-1, .row-2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 15px;  
+            }     
+            .img-card img {
+                
+                height: auto;
+          } 
+        
+    
+    
+
+
+
+
+
     .container{
     margin: 3rem auto;
 }
@@ -632,4 +873,31 @@ input{
 
 
 
+
+
+
+
+
+.grid-container {
+    display: grid;
+    width: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item input,
+.grid-item select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
