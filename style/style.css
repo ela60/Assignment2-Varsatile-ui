@@ -60,7 +60,7 @@ h3{
     background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
     height: 8rem;
     margin-top: -0px;
-    /* background-color: rgb(26, 24, 24); */
+
    
 }
 .nav-options{
@@ -375,22 +375,14 @@ h2 {
 }
 .bmi-para{
     margin-top: -50px;
+    margin-left: 50px;
     text-align: center;
 }
 
 input[type="number"], select {
-    /* width: calc(100% - 20px); 
-    padding: 10px; */
-    /* margin-left: 0px;
-    border: 1px solid #676363;
-    border-radius: 5px;
-    background-color: #2b2a2a; */
-    /* color: #383535;
-    font-size: 16px;
-    /* line-height: 1.5; */
     box-sizing: border-box; 
     display: inline-block;
-    vertical-align: middle;  */
+    vertical-align: middle; 
 }
     
 input[type="number"],
@@ -398,41 +390,43 @@ select {
     width: 70%;
     padding: 8px ;
     margin-bottom: 20px;
-    background-color: #2b2a2a;
+    background-color: #807c7c;
     border: 1px solid #686868;
-    border-radius: 4px;
+    background-color: #403e3e;
+    border-radius: 10px;
 }
 .grid-container {
     display: grid;
-    /* width: 50px; */
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(2, 300px) 50px 50px; */
-    gap: 8px;
     padding: 20px;
     border-radius: 10px;
     margin-left: 120px;
 }
 
-.grid-item input,
+ 
 .grid-item select {
+    width: 70%;
     padding: 10px;
     border: 1px solid #6e6c6c;
     color: gray;
+    background-color: #403e3e;
     border-radius: 10px;
     font-size: 16px;
     margin-bottom: 5px;
     /*  margin-left: 120px; */
 }
 .grid-item1 select {
-    width: 60%;
-    padding: 5px;
+    width: 65%;
     color: gray;
     border: 1px solid #6e6c6c;
+    background-color: #403e3e;
     border-radius: 8px;
     font-size: 16px;
-    margin-bottom: 10px;
-     margin-left: 150px;
+    margin-left: 155px;
     
+}
+.grid-item1{
+    margin-top: -30px;
 }
 
 .btn-primary2{
@@ -445,7 +439,7 @@ select {
     font-weight: 800;
     border-radius: 20px;
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 155px;
     border: 0;
     
 }
