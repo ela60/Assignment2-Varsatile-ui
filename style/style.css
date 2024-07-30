@@ -189,7 +189,7 @@ h3{
 }
 .icon{
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     align-items: center;
     color: #ff4500;
 }
@@ -225,7 +225,7 @@ h5{
 }
 h2{
     color: white;
-    font-size: 35px;
+    font-size: 30px;
 }
 .image-grid{
     display: grid;
@@ -261,6 +261,7 @@ h2{
     margin-left: 200px;
     margin-right: 200px;
     border-radius: 12px;
+    padding: 15px;
 }
 .run-text1{
     padding: 10px ;
@@ -271,28 +272,34 @@ h2{
     margin-left: 70px;
 }
 
+
  .run-img {
     display: flex;
     padding: 30px;
     border-radius: 6px;
-  
+
 }
 
 .run-img img {
     width: 100%;
-    max-width: 250px; 
-    height: auto;
+    /* max-width: 300px;  */
+    width: 350px; 
+    height: 250px;
     border-radius: 8px;
 }
+.run-p{
+    text-align: center;
+}
+
 
 /* Bmi style */
 .Bmi{
-    padding: 70px;
-    margin-left: 260px;
+    padding: 50px;
+    margin-left: 130px;
     
 }
 .bmi-h{
-    margin-left:-640px ;
+    margin-left:-850px ;
 }
 /* bmi Calculator style */
 
@@ -300,15 +307,19 @@ h2{
     display: flex;
     flex-wrap: wrap;
     background-color: #2b2a2a;
-    padding: 20px;
-    max-width: 1200px;
+    padding: 15px;
+    max-width: 1300px;
     
+}
+.bmi-another{
+    margin-left: 130px;
+    margin-top: 30px;
 }
 .bmi-chart table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: -30px;
-    margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 130px;
 }
 
 .bmi-chart th, .bmi-chart td {
@@ -320,6 +331,7 @@ h2{
 .bmi-h2{
    font-size: 30px;
     margin:60px;
+    /* margin-left: 150px; */
     
 }
 .table {
@@ -351,31 +363,78 @@ td{
 }
 
 /* Another part of BMi */
+.calculator{
+    margin-left: 120px;
+    margin-top: -30px;
+}
+
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    
+.bmi-para{
+    margin-top: -50px;
+    text-align: center;
 }
+
 input[type="number"], select {
-    padding: 10px 50px;
-    margin-top: 5px;
-    margin-left: 100px;
+    /* width: calc(100% - 20px); 
+    padding: 10px; */
+    /* margin-left: 0px;
     border: 1px solid #676363;
-    border-radius: 7px;
+    border-radius: 5px;
+    background-color: #2b2a2a; */
+    /* color: #383535;
+    font-size: 16px;
+    /* line-height: 1.5; */
+    box-sizing: border-box; 
+    display: inline-block;
+    vertical-align: middle;  */
 }
+    
 input[type="number"],
 select {
-    width: 100%;
-    padding: 10px ;
+    width: 70%;
+    padding: 8px ;
     margin-bottom: 20px;
     background-color: #2b2a2a;
     border: 1px solid #686868;
     border-radius: 4px;
 }
+.grid-container {
+    display: grid;
+    /* width: 50px; */
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 300px) 50px 50px; */
+    gap: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 120px;
+}
+
+.grid-item input,
+.grid-item select {
+    padding: 10px;
+    border: 1px solid #6e6c6c;
+    color: gray;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    /*  margin-left: 120px; */
+}
+.grid-item1 select {
+    width: 60%;
+    padding: 5px;
+    color: gray;
+    border: 1px solid #6e6c6c;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+     margin-left: 150px;
+    
+}
+
 .btn-primary2{
     width: 180px;
     background-color: #ff4500;
@@ -386,7 +445,7 @@ select {
     font-weight: 800;
     border-radius: 20px;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 150px;
     border: 0;
     
 }
@@ -395,21 +454,22 @@ select {
 
 /* Meat our team style */
 .meet-team{
-    padding: 20px;
+    padding: 25px;
 }
 
 .meet-team2 {
     background-color: rgb(41, 40, 40);
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 10px;
 }
 .row-1,.row-2
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px ;
+    /* row-gap: 20px; */
+    padding: 10px ;
     gap: 20px;
     
 
@@ -473,7 +533,7 @@ select {
     color: rgb(135, 131, 131);
 }
 .footer-section{
-    margin-top: 50px;
+    margin-top: -20px;
     padding: 50px 0px 50px 100px;
     background-color:rgb(41, 40, 40);  
 }
@@ -522,6 +582,7 @@ select {
 }
 
 /* unique side design */
+
 .explore-your-travel{
     background-image: linear-gradient(100deg,
     rgba(31, 27, 27, 0.8)0%,
@@ -533,6 +594,7 @@ select {
     background-size: cover;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 
 }
 .explore-container h3{
@@ -629,6 +691,8 @@ input,select{
     h3{
     font-size: 26px;
 }
+
+
    /* banner responsive */
     .banner {
         flex-direction: column;
@@ -733,6 +797,8 @@ input,select{
         justify-content: center;
     }
 
+
+
     /* Change habit responsive section */
 
     .change-section {
@@ -816,13 +882,9 @@ input,select{
                 
                 height: auto;
           } 
-        
-    
-    
 
 
-
-
+        /* Unique section         */
 
     .container{
     margin: 3rem auto;
@@ -856,8 +918,28 @@ input,select{
 input{
     width:90%;
 }
+
+
+/* footer section responsive */
+
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
 }
 
+
+.footer-section hr {
+    width: 100%; 
+    margin: 1rem auto; 
+}
+
+.footer-section p.hr-p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+}
 
 
 
@@ -878,26 +960,5 @@ input{
 
 
 
-.grid-container {
-    display: grid;
-    width: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
 
-.grid-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.grid-item input,
-.grid-item select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
 
