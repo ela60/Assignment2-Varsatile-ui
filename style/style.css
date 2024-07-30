@@ -666,12 +666,13 @@ input,select{
 
 /* Responsive Design For Mobile or 576px */
 
-@media screen and (max-width: 576px)
-{
+@media screen and (max-width: 576px){
+
     .nav-bar {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
+        margin-top: -60px;
         padding: 10px;
     }
 
@@ -700,9 +701,8 @@ input,select{
 
    /* banner responsive */
     .banner {
+        width: 100%;
         flex-direction: column;
-        align-items: center;
-        background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
          padding: 10px;
     }
 
@@ -723,69 +723,44 @@ input,select{
 
     .banner-img {
         width: 100%;
-        min-height: 300px;
+        height: 300px;
         margin-left: 0; 
         background-size: contain; 
-        background-position: center; 
+       
     }
 
     .banner-description {
         font-size: 16px;
         font-weight: 500;
-        margin-bottom: 20px;
-        color: rgb(130, 130, 127);
-        margin-left: 0; /* Center the description */
+        margin-bottom: 20px;        margin-left: 0; /* Center the description */
     }
 
     .btn-primary1 {
         width: 100%;
         background-color: black;
         color: white;
-        padding: 10px 20px;
+        /* padding: 10px 20px;
         font-size: 1.2rem;
         font-weight: 800;
-        margin-left: 0; /* Center the button */
-        border-radius: 20px;
+        margin-left: 0; 
+        border-radius: 20px; */
         border: 1px solid white;
     }
 
     .banner-more {
-        width: 100%;
-        height: auto;
-        font-size: 12px;
-        font-weight: 10px;
-        margin-left: 0; /* Center the element */
-        margin-top: 20px;
-        color: white;
-        text-align: center;
-        border: 1px solid rgb(158, 150, 150);
-        background: rgba(156, 150, 150, 0.2);
-        border-radius: 8px;
-        padding: 10px;
-    }
-
-    .banner-p {
-        font-size: 10px;
-        font-weight: 500;
-        color: #a8a1a1;
-        margin-left: 0; /* Center the text */
-        margin-top: -25px;
+        width: 30%;
+        margin-left: 190px; 
+        margin-top: 60px;
+        padding: 2px 12px;
     }
 
     .banner-another {
-        display: flex;
-        width: 100%;
-        height: auto;
-        font-size: 12px;
-        font-weight: 10px;
-        margin-left: 0; /* Center the element */
-        margin-top: 20px;
-        color: white;
-        text-align: center;
-        border: 1px solid rgb(158, 150, 150);
-        background: rgba(143, 139, 139, 0.2);
-        border-radius: 8px;
-        padding: 10px;
+        width: 30%;
+        font-size: 9px;
+        font-weight: 5px;
+        margin-left: 20px; 
+        margin-top: 130px;
+        padding: 2px 8px;
     }
 
     .icon {
@@ -793,13 +768,6 @@ input,select{
         margin-bottom: 5px;
         align-items: center;
         color: #ff4500;
-    }
-
-    .icon-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
 
@@ -844,15 +812,14 @@ input,select{
             flex-direction: column; 
             align-items: center;
             background-color: rgb(41, 40, 40); 
-            margin: 0 10px; /* Reduce margins for smaller screens */
+            margin: 0 10px; 
             border-radius: 12px;
-            padding: 10px; /* Add padding for better spacing */
+            padding: 10px; 
         }
     
         .run-text1, .run-text {
             padding: 10px;
-            /* margin-left: 0;  */
-            text-align: center; /* Center-align text */
+           
         }
     
       .run-img img {
@@ -862,13 +829,85 @@ input,select{
         }
 
 
+        /* BMI responsive style */
+        .Bmi {
+            padding: 20px; 
+            margin-left: 10px; 
+            
+        }
+        .bmi-h {
+            margin-left: -50px; 
+        }
+        /* Bmi table style responsive */
+        .Bmi-calculator {
+            flex-direction: column; 
+            padding: 10px;
+            max-width: 100%; 
+        }
+    
+        .bmi-another {
+            margin-left: -90px; 
+            font-size: 20px;
+        }
+    
+        .bmi-chart table {
+            margin-left: 0; 
+            width: 80%; 
+            font-size: 14px; 
+        }
+        /* calculator part responsive */
+        .calculator {
+        margin: 0 auto;
+        
+    }
+
+    .bmi-para {
+        margin:-50px  10px 10px 3px ;
+        font-size: 14px;
+       
+    }
+    .bmi-h2{
+       margin-top: 30px;
+       margin-left: -30px;
+       font-size: 20px;
+    }
+
+    input[type="number"], select {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .g1, .g3  {
+        margin-left: -10px;
+    }
+    .g2, .g4{
+        margin-left: -16px;   
+       
+    }
+
+    .grid-item1 select {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .btn-primary2 {
+        width: 50%;
+        margin: 20px 0;
+       
+        
+    }
         /* Meet our team responsive */
             .meet-team {
                 padding: 12px; 
             }
         
             .meet-team2 {
-                background-color: rgb(41, 40, 40);
                  margin: 0 auto;
                 margin-top: 30px;
                 border-radius: 10px;
@@ -928,20 +967,21 @@ input{
 /* footer section responsive */
 
 
-.footer-content{
-    display: flex;
+.footer-content,.footer-links{
+   
     flex-direction: column;
 }
-
-
-.footer-section hr {
+.footer-section  {
     width: 100%; 
-    margin: 1rem auto; 
+    margin-left: -80px; 
+}
+.footer-info >p{
+    font-size: 12px;
+
 }
 
-.footer-section p.hr-p {
-    font-size: 0.9rem;
-    margin-top: 1rem;
+hr{
+    width: 30%;
 }
 
 }
