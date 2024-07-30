@@ -179,7 +179,7 @@ h3{
     font-size: 15px;
     font-weight: 10px;
     margin-left: 2px;
-    margin-top: 270px;
+    margin-top: 200px;
     color: white;
     text-align: center;
     border: 1px solid rgb(158, 150, 150);
@@ -261,7 +261,7 @@ h2{
     margin-left: 200px;
     margin-right: 200px;
     border-radius: 12px;
-    padding: 15px;
+    padding: 5px  10px;
 }
 .run-text1{
     padding: 10px ;
@@ -312,14 +312,14 @@ h2{
     
 }
 .bmi-another{
-    margin-left: 130px;
+    margin-left: 170px;
     margin-top: 30px;
 }
 .bmi-chart table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
-    margin-left: 130px;
+    margin-left: 160px;
 }
 
 .bmi-chart th, .bmi-chart td {
@@ -331,7 +331,7 @@ h2{
 .bmi-h2{
    font-size: 30px;
     margin:60px;
-    /* margin-left: 150px; */
+    margin-left: 100px;
     
 }
 .table {
@@ -375,7 +375,7 @@ h2 {
 }
 .bmi-para{
     margin-top: -50px;
-    margin-left: 50px;
+    margin-left: 80px;
     text-align: center;
 }
 
@@ -399,8 +399,19 @@ select {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 120px;
+}
+.g1,.g3{
+    margin-right: -33px;
+
+}
+.g2,.g4{
+ margin-left: -33px;
+   
+}
+.g3,.g4{
+    margin-top: -10px;
 }
 
  
@@ -416,7 +427,7 @@ select {
     /*  margin-left: 120px; */
 }
 .grid-item1 select {
-    width: 65%;
+    width: 60%;
     color: gray;
     border: 1px solid #6e6c6c;
     background-color: #403e3e;
