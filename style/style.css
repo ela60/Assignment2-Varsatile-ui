@@ -12,8 +12,7 @@ body{
     font-size: 90px;
     font-weight: 300;
     line-height: .3rem;
-}
-                                     
+}        
 
 /* Shared styles */
 *{
@@ -35,7 +34,7 @@ h3{
     font-weight: bold;
     margin-left: 150px;
     color: white;
-    line-height: normal;
+    line-height: 1rem;
 }
 .btn-primary{
     width: 180px;
@@ -48,7 +47,7 @@ h3{
     border-radius: 20px;
     margin-left: 70px;
     margin-top: 10px;
-    border: 0;
+    border: .5px solid rgb(201, 195, 195);
     
 }
 
@@ -59,7 +58,7 @@ h3{
     align-items: center;
     background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
     height: 8rem;
-    margin-top: -0px;
+    margin-top: 0px;
 
    
 }
@@ -95,14 +94,11 @@ h3{
 }
 
 .banner{
-    /* flex-direction: column; */
     align-items: center;
     background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
     margin-top: -80px;
    
 }
-
-
 /* banner related styles */
 .banner-content{
     width: 60%;
@@ -128,9 +124,6 @@ h3{
     background-repeat: no-repeat;
     color: white;
 }
-.banner-image{
-    width: 100%;
-}
 .banner-description{
     font-size: 20px;
     font-weight: 500;
@@ -141,14 +134,24 @@ h3{
 }
 .btn-primary1{
     width: 180px;
-    background-color:black;
+    background-color:rgb(60, 58, 58);
     color:white;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    cursor: pointer;
     font-size: 2 rem;
     font-weight: 800;
-    margin-left: 7px;
     border-radius: 20px;
-    border: 1px solid white;
+    margin-left: 7px;
+    margin-top: 10px;
+    border: .5px solid  ;  
+}
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;  
+}
+.btn {
+    flex-grow: 1;   
 }
 /* banner-box */
 .banner-more{
@@ -187,19 +190,15 @@ h3{
     border-radius: 8px;
     
 }
-.icon{
+.icon ,.icon-text{
+    display: flex;
+    align-items: center;
     font-size: 30px;
     margin-bottom: 8px;
     align-items: center;
     color: #ff4500;
-}
-.icon-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
-
 /* Change habit Section */
 .change-section{
     padding: 70px;
@@ -241,7 +240,6 @@ h2{
 .row {
     text-align: center;
 }
-/* Round images in change habit*/
 .row img {
     width: 100%;
     max-width: 150px; 
@@ -265,41 +263,32 @@ h2{
 }
 .run-text1{
     padding: 10px ;
+    line-height: 2.5rem;
     margin-left: 70px;
 }
 .run-text{
     padding: 10px ;
     margin-left: 70px;
 }
-
-
  .run-img {
     display: flex;
     padding: 30px;
     border-radius: 6px;
-
 }
-
 .run-img img {
     width: 100%;
-    /* max-width: 300px;  */
     width: 350px; 
     height: 250px;
     border-radius: 8px;
 }
-.run-p{
-    text-align: center;
-}
-
-
-/* Bmi style */
+/* Bmi style section1 */
 .Bmi{
     padding: 50px;
-    margin-left: 130px;
+    margin-left: 270px;
     
 }
 .bmi-h{
-    margin-left:-850px ;
+    margin-right: 750px ;
 }
 /* bmi Calculator style */
 
@@ -327,12 +316,10 @@ h2{
     padding: 8px;
     text-align: center;
 }
-
 .bmi-h2{
    font-size: 30px;
     margin:60px;
-    margin-left: 100px;
-    
+    margin-left: 100px;   
 }
 .table {
     border-collapse: collapse;
@@ -343,7 +330,6 @@ h2{
     border-radius: 8px;
     overflow: hidden;
 }
-
 .bmi-category {
     font-weight: bold;
 }
@@ -367,8 +353,6 @@ td{
     margin-left: 120px;
     margin-top: -30px;
 }
-
-
 h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -377,22 +361,16 @@ h2 {
     margin-top: -50px;
     margin-left: 80px;
     text-align: center;
-}
-
-input[type="number"], select {
-    box-sizing: border-box; 
-    display: inline-block;
-    vertical-align: middle; 
-}
-    
+} 
 input[type="number"],
 select {
     width: 70%;
     padding: 8px ;
     margin-bottom: 20px;
-    background-color: #807c7c;
     border: 1px solid #686868;
     background-color: #403e3e;
+    box-sizing: border-box; 
+    display: inline-block;
     border-radius: 10px;
 }
 .grid-container {
@@ -413,8 +391,6 @@ select {
 .g3,.g4{
     margin-top: -10px;
 }
-
- 
 .grid-item select {
     width: 70%;
     padding: 10px;
@@ -424,7 +400,6 @@ select {
     border-radius: 10px;
     font-size: 16px;
     margin-bottom: 5px;
-    /*  margin-left: 120px; */
 }
 .grid-item1 select {
     width: 60%;
@@ -439,7 +414,6 @@ select {
 .grid-item1{
     margin-top: -30px;
 }
-
 .btn-primary2{
     width: 180px;
     background-color: #ff4500;
@@ -451,17 +425,12 @@ select {
     border-radius: 20px;
     margin-top: 10px;
     margin-left: 155px;
-    border: 0;
-    
+    border: 0;  
 }
-
-
-
 /* Meat our team style */
 .meet-team{
     padding: 25px;
 }
-
 .meet-team2 {
     background-color: rgb(41, 40, 40);
     max-width: 1000px;
@@ -473,11 +442,8 @@ select {
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* row-gap: 20px; */
     padding: 10px ;
     gap: 20px;
-    
-
 }
 .img-card {
     border-radius: 8px;
@@ -492,45 +458,35 @@ select {
     filter:brightness(80%);  
 }
 .img-card h6 {
+    margin: 10px 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
     position: absolute;
     top: 80%;
     left: 29%;
     transform: translate(-50%, -50%);
     margin: 0;
-    z-index: 1;
 }
-
 .img-card .Card {
     position: absolute;
-    top: 90%;
+    top: 86%;
     left: 22%;
     transform: translate(-50%, -50%);
     margin: 0;
-    z-index: 1;
-}
-
-.img-card h6 {
-    margin: 10px 0 5px;
-    font-size: 13px;
-    font-weight: bold;
-    color: white;
 }
 .img-card p{
-    color:#d6cdcd80;
+    color:#dfdbdb80;
     font-size: 11px;
 }
 .team-p{
     text-align: center;
     margin-bottom: 15px;
 }
-
-
 /* footer get started part */
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
 }
 .nav-link{
     text-decoration: none;
@@ -546,12 +502,9 @@ select {
     text-align: center;
     font-size: 14px;
 }
-
-
 /* footer started style */
 .started{
-    display: flex;
-    
+    display: flex;   
 }
 .options{
     display: flex;
@@ -564,11 +517,9 @@ select {
 .footer-links{
     display: flex;
 }
-
 .get-started {
     padding: 0; 
 }
-
 .h5-footer {
     margin: 0; 
     padding: 0; 
@@ -650,29 +601,21 @@ input,select{
         font-size: 2 rem;
         font-weight: 800;
         border-radius: 8px;
-        /* margin-left: 70px; */
         margin-top: 10px;
         border: 0;
         
     }
-
-
-
-
 /* Responsive layout */
 .ham-burger{
     display: none;
 }
-
 /* Responsive Design For Mobile or 576px */
-
 @media screen and (max-width: 576px){
-
     .nav-bar {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        margin-top: -60px;
+        /* margin:0; */
         padding: 10px;
     }
 
@@ -691,7 +634,6 @@ input,select{
         align-self: flex-end; 
         margin-top: -40px;
         margin-right: 40px;
-       
     }
 
     h3{
@@ -730,32 +672,27 @@ input,select{
     }
 
     .banner-description {
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 20px;        margin-left: 0; /* Center the description */
+     margin-left: -15px;
+     font-size: 14px;
+     line-height: 1 rem; 
+     padding: 0 15px;
     }
 
-    .btn-primary1 {
-        width: 100%;
-        background-color: black;
-        color: white;
-        /* padding: 10px 20px;
-        font-size: 1.2rem;
-        font-weight: 800;
-        margin-left: 0; 
-        border-radius: 20px; */
-        border: 1px solid white;
+    .btn {
+       
+        width: 30%; 
     }
 
+    
     .banner-more {
-        width: 30%;
+        width: 25%;
         margin-left: 190px; 
         margin-top: 60px;
         padding: 2px 12px;
     }
 
     .banner-another {
-        width: 30%;
+        width: 28%;
         font-size: 9px;
         font-weight: 5px;
         margin-left: 20px; 
@@ -770,10 +707,7 @@ input,select{
         color: #ff4500;
     }
 
-
-
     /* Change habit responsive section */
-
     .change-section {
         padding: 20px; 
     }
@@ -811,15 +745,18 @@ input,select{
             display: flex;
             flex-direction: column; 
             align-items: center;
-            background-color: rgb(41, 40, 40); 
             margin: 0 10px; 
             border-radius: 12px;
             padding: 10px; 
         }
     
         .run-text1, .run-text {
-            padding: 10px;
-           
+       margin-left: -15px;
+       line-height: 1 rem; 
+       padding: 10px;  
+        }
+        .run-text{
+            margin-left: 50px;
         }
     
       .run-img img {
@@ -836,7 +773,8 @@ input,select{
             
         }
         .bmi-h {
-            margin-left: -50px; 
+            margin-left: 5px; 
+            line-height: none;
         }
         /* Bmi table style responsive */
         .Bmi-calculator {
@@ -846,7 +784,7 @@ input,select{
         }
     
         .bmi-another {
-            margin-left: -90px; 
+            margin-left: -15px; 
             font-size: 20px;
         }
     
@@ -862,8 +800,10 @@ input,select{
     }
 
     .bmi-para {
-        margin:-50px  10px 10px 3px ;
-        font-size: 14px;
+    margin-left: -15px;
+   font-size: 14px;
+    line-height: 1 rem; 
+    padding: 0 15px;
        
     }
     .bmi-h2{
@@ -931,16 +871,19 @@ input,select{
         /* Unique section         */
 
     .container{
-    margin: 3rem auto;
-}
-    p{
-    font-size: 16px;
+    /* margin: 3rem auto; */
+    
 }
     .explore-container h3{
-    font-size: 26px;
+    font-size: 20px;
+    margin-left: -8px;
+    line-height: 5 rem; 
+    padding: 0 15px;
+    
 }
     .explore-container p{
     width: 60%;
+    font-size: 14px;
 }
     .travel-inputs{
     flex-direction: column;
@@ -953,12 +896,7 @@ input,select{
     width: 100%;
     margin: 1rem 0;
 }
-    .popular-section,
-    .row-1,
-    .row-2,
-    .row-3{
-    grid-template-columns: 1fr;
-}
+   
 input{
     width:90%;
 }
@@ -975,13 +913,20 @@ input{
     width: 100%; 
     margin-left: -80px; 
 }
-.footer-info >p{
-    font-size: 12px;
+.footer-info >p ,.link{
+   margin-left: -15px;
+   font-size: 14px;
+    line-height: 1 rem; 
+    padding: 0 15px;
 
 }
+.h5-footer{
+    font-size: 18px;
+}
 
-hr{
-    width: 30%;
+.footer-section hr{
+    width: 90%;
+    margin-left: 5px;
 }
 
 }
