@@ -12,12 +12,12 @@ body{
     font-size: 90px;
     font-weight: 300;
     line-height: .3rem;
-}        
+}
+     
 
 /* Shared styles */
 *{
-    margin: 0;
-    
+    margin: 0;  
 }
 .display-flex{
     display: flex;
@@ -50,7 +50,6 @@ h3{
     border: .5px solid rgb(201, 195, 195);
     
 }
-
 /* nav bar */
 .nav-bar{
     display: flex;
@@ -59,8 +58,6 @@ h3{
     background: linear-gradient(135deg, #161414 0%, #1d1a1a 100%);
     height: 8rem;
     margin-top: 0px;
-
-   
 }
 .nav-options{
     display: flex;
@@ -577,13 +574,15 @@ input,select{
     .nav-bar {
         flex-direction: column;
         align-items: flex-start;
-        height: auto;
-        /* margin:0; */
-        padding: 10px;
+        height: auto; 
     }
       .span, .span1 {
         display: block;
         margin: 5px 0;
+    }
+    .span{
+        margin-left: 10px;
+        margin-top: 20px;
     }
     .nav-options{
         display: none;
@@ -604,7 +603,7 @@ input,select{
     .banner {
         width: 100%;
         flex-direction: column;
-         padding: 10px;
+         /* padding: 10px; */
     }
     .banner-content {
         width: 90%;
@@ -626,10 +625,10 @@ input,select{
         background-size: contain;  
     }
     .banner-description {
-     margin-left: -15px;
-     font-size: 14px;
-     line-height: 1 rem; 
-     padding: 0 15px;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    padding: 20px 5px;
     }
     .button-container{
         justify-content: flex-start;
@@ -803,28 +802,35 @@ input,select{
 input{
     width:90%;
 }
-/* footer section responsive */
-.footer-content,.footer-links{
+/* footer section responsive  */
+   .footer-content ,.footer-section{
     flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+    gap: 15px; 
+    padding: 20px 10px;
 }
-.footer-section  {
-    width: 100%; 
-    padding:  20px;  
+.span3{
+    margin-left: 0;
+    font-size: 2.5rem;
 }
-.footer-info >p ,.link{
-   font-size: 16px;
-    line-height: 1 rem; 
-    margin-right: 10px;
-    padding: 5px ;
+
+.get-started {
+    text-align:left;
+    margin-top: 20px;
+    font-weight: 400px;
 }
-.h5-footer{
-    font-size: 18px;
+.footer-links,.hr-p {
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
 }
 .footer-section hr{
     width: 85%;
     margin-left: 5px;
 }
 }
+  
 
 
 
