@@ -572,7 +572,7 @@ select {
     background-image: linear-gradient(100deg,
             rgba(31, 27, 27, 0.8)0%,
             rgba(245, 237, 237, 0)100%),
-        url('../Images/exercise6.jpg');
+        url('../images/exercise6.jpg');
     padding: 5rem 0;
     background-repeat: no-repeat;
     background-position: center;
