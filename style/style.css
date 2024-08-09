@@ -308,8 +308,10 @@ h2 {
     width: 100%;
     width: 350px;
     height: 250px;
-    border-radius: 8px;
-    object-fit: contain;
+    border-radius: 15px;
+    /* object-fit: none;
+    object-position: 66% 20%; */
+   
 }
 /* Bmi style section1 */
 .Bmi {
